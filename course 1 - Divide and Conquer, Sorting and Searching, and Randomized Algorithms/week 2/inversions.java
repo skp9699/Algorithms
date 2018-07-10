@@ -5,7 +5,7 @@ class inversions {
 	static long count = 0L;
     public static void main(String args[])throws Exception{    
     
-		File file = new File("IntegerArray.txt");    
+		File file = new File("IntegerArray.txt");   //replace here to test
 
 		BufferedReader br = new BufferedReader(new FileReader(file));
 			
@@ -19,9 +19,6 @@ class inversions {
 	
 		inversions inv = new inversions();
 	
-	/*	inv.merge_sort(arr,0,49999);
-		inv.merge_sort(arr,50000,99999);
-	*/
 		inv.merge_sort(arr,0,99999);
 	
 		System.out.println(count);

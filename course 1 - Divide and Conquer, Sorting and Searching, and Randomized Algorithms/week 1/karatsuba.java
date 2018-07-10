@@ -8,6 +8,8 @@ import java.math.BigInteger;
 class karatsuba {
     public static void main(String args[] ) throws Exception {
     
+	/*Replace the strings to multiply*/    
+	    
     String x = "3141592653589793238462643383279502884197169399375105820974944592";
     String y = "2718281828459045235360287471352662497757247093699959574966967627";
     
@@ -20,8 +22,6 @@ class karatsuba {
     int len1 = l.length(), len2 = m.length();
     
     if(len1 > 4 && len2 > 4){
-		
-		//System.out.println(">4");
 		
         String a = l.substring(0,len1-4);
         String b = l.substring(len1-4);
